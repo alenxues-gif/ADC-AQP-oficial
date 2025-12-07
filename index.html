@@ -99,11 +99,16 @@
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
-        duration: 1200, 
-        offset: 120,
+        duration: 1200, // Duración de la animación (1.2 segundos)
+        offset: 120,    // Empieza un poco antes de llegar
+        
+        /* ESTA ES LA CLAVE: */
+        once: true,     /* true = La animación ocurre UNA vez y se bloquea ahí */
+        mirror: false   /* false = NO se revierte ni repite al subir */
       });
     </script>
 </body>
 </html>
+
 
 
