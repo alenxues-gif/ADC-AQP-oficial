@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - ADC UNSA</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="galeria.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header" data-aos="fade-down">
+        <div class="branding-container">
+            <div class="logo-wrapper">
+                <img src="images/1.jpg" alt="Logo ADC" class="logo-img">
+            </div>
+            <p class="slogan">Impulsando el liderazgo y la creatividad en la UNSA</p>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="que-hacemos.html">Qué Hacemos</a></li>
+                <li><a href="galeria.html" style="color: var(--color-acento);">Galería</a></li>
+                <li><a href="inscribirse.html" class="btn-inscribirse">Inscribirse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section style="background-color: var(--color-primario); padding: 4rem 10%; text-align: center; color: white;">
+        <h1 data-aos="fade" data-aos-duration="1500" style="font-family: var(--fuente-titulos); font-size: 3rem; font-weight: 800;">Nuestra Galería</h1>
+        <p data-aos="fade" data-aos-duration="1500" style="margin-top: 10px; font-size: 1.1rem; color: #eeeeee;">
+    Momentos inolvidables de nuestra comunidad
+</p>
+    </section>
+
+    <main class="gallery-section">
+        <div class="photo-grid">
+            
+            <div class="gallery-card" data-aos="fade-up">
+                <img src="images/4.jpg" alt="Evento Aniversario">
+                <div class="gallery-overlay">
+                    <h3>Aniversario ADC</h3>
+                    <p>Celebrando un año más de logros.</p>
+                </div>
+            </div>
+
+            <div class="gallery-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/5.jpg" alt="Talleres">
+                <div class="gallery-overlay">
+                    <h3>Talleres de Liderazgo</h3>
+                    <p>Formando a los líderes del mañana.</p>
+                </div>
+            </div>
+
+            <div class="gallery-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/6.jpg" alt="Voluntariado">
+                <div class="gallery-overlay">
+                    <h3>Voluntariado</h3>
+                    <p>Impacto social en Arequipa.</p>
+                </div>
+            </div>
+
+            <div class="gallery-card" data-aos="fade-up">
+                <img src="images/7.jpg" alt="Integración">
+                <div class="gallery-overlay">
+                    <h3>Integración</h3>
+                    <p>Momentos de diversión y unión.</p>
+                </div>
+            </div>
+
+             <div class="gallery-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/3.jpg" alt="Conferencias">
+                <div class="gallery-overlay">
+                    <h3>Conferencias</h3>
+                    <p>Aprendizaje continuo.</p>
+                </div>
+            </div>
+
+             <div class="gallery-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/4.jpg" alt="Cultura">
+                <div class="gallery-overlay">
+                    <h3>Cultura ADC</h3>
+                    <p>Nuestra identidad en acción.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="contact-info">
+            <h3>ADC UNSA</h3>
+            <p>Asociación de Desarrollo y Cultura</p>
+            <address>
+                <p>📍 Universidad Nacional de San Agustín</p>
+            </address>
+        </div>
+        <div class="footer-logo-ad">
+            <img src="images/2.jpg" alt="Logo Footer">
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>

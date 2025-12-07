@@ -1,0 +1,90 @@
+/* =========================================
+   ESTILOS ESPECÍFICOS PARA 'QUIÉNES SOMOS'
+   ========================================= */
+
+/* --- SECCIÓN DE HISTORIA --- */
+.history-section {
+    padding: 4rem 10%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+/* --- SECCIÓN MISIÓN Y VISIÓN (Tarjetas) --- */
+.mv-section {
+    padding: 4rem 10%;
+    /* Usamos el color de fondo claro oficial (Crema Búho) */
+    background-color: var(--color-fondo-claro); 
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.mv-card {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid var(--color-primario); /* Borde superior Azul Búho */
+}
+
+.mv-card:hover {
+    transform: translateY(-10px); /* Sube un poco al pasar el mouse */
+    box-shadow: 0 15px 40px rgba(25, 50, 98, 0.15);
+    border-top: 5px solid var(--color-acento); /* Cambia a Azul Claro al hover */
+}
+
+.mv-card h2 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-primario);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* --- SECCIÓN VALORES (Lista de Iconos) --- */
+.values-section {
+    padding: 4rem 10%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.values-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 3rem;
+}
+
+.value-item {
+    background-color: #f4f6f8;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 200px;
+    transition: background-color 0.3s;
+}
+
+.value-item:hover {
+    background-color: var(--color-acento); /* Se ilumina al pasar el mouse */
+    color: var(--color-primario);
+}
+
+.value-item h3 {
+    font-family: var(--fuente-titulos);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .history-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}

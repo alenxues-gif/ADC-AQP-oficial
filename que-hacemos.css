@@ -1,0 +1,106 @@
+/* =========================================
+   ESTILOS PARA 'QUÉ HACEMOS'
+   ========================================= */
+
+/* --- SECCIÓN INTRODUCTORIA --- */
+.intro-section {
+    padding: 4rem 10%;
+    text-align: center;
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto; /* Centrar el bloque */
+}
+
+.intro-section p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 1rem;
+}
+
+/* --- GRILLA DE PILARES (4 Áreas) --- */
+.pillars-section {
+    padding: 2rem 10% 5rem 10%;
+    background-color: #fff;
+}
+
+.pillars-grid {
+    display: grid;
+    /* Columnas automáticas responsive */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* --- TARJETA DE ACTIVIDAD --- */
+.pillar-card {
+    background-color: var(--color-fondo-claro); /* Fondo suave oficial */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.pillar-card:hover {
+    transform: translateY(-8px); /* Efecto de elevación */
+    box-shadow: 0 15px 30px rgba(25, 50, 98, 0.15); /* Sombra azulada */
+    border-color: var(--color-acento); /* Borde sutil azul claro */
+}
+
+/* Imagen de la tarjeta */
+.pillar-image {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.pillar-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.pillar-card:hover .pillar-image img {
+    transform: scale(1.1); /* Zoom suave en la foto */
+}
+
+/* Contenido de la tarjeta */
+.pillar-content {
+    padding: 2rem;
+    flex-grow: 1; /* Para que todas las tarjetas tengan misma altura */
+    text-align: center;
+}
+
+.pillar-content h3 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-primario);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.pillar-content p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+/* Etiqueta decorativa (Pill) */
+.pillar-tag {
+    display: inline-block;
+    background-color: var(--color-primario);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Variación de color para las etiquetas al pasar el mouse */
+.pillar-card:hover .pillar-tag {
+    background-color: var(--color-acento);
+    color: var(--color-primario);
+}
