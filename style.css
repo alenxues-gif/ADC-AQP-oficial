@@ -66,7 +66,7 @@ img {
 }
 
 .logo-img {
-    height: 50px; /* <--- AJUSTA ESTE NÚMERO. Prueba con 45px, 50px o 60px */
+    height: 20px; /* <--- AJUSTA ESTE NÚMERO. Prueba con 45px, 50px o 60px */
     width: auto;  /* Esto mantiene la proporción para que no se deforme */
     display: block;
 }
@@ -379,6 +379,7 @@ img {
         gap: 2rem;
     }
 }
+
 
 
 
