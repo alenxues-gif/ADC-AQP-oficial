@@ -127,16 +127,21 @@ img {
    ========================================= */
 .hero-banner {
     position: relative;
-    background-color: var(--color-primario);
+    background-color: var(--color-primario); /* Fondo Azul por si falla la foto */
+    min-height: 500px; /* Altura mínima para que no desaparezca el bloque */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .hero-banner img {
     width: 100%;
-    height: 500px;
-    object-fit: cover;
-    opacity: 0.95; /* Menos transparente para que se vean bien las fotos */
+    height: 500px; /* Forzamos la altura */
+    object-fit: cover; /* Recorta la imagen para que llene todo */
+    opacity: 0.95;
+    display: block; /* Asegura que se comporte como bloque */
 }
-
 /* =========================================
    ÁREA DE CONTENIDO
    ========================================= */
@@ -267,4 +272,5 @@ img {
         gap: 2rem;
         text-align: center;
     }
+
 }
