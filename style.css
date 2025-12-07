@@ -65,11 +65,10 @@ img {
     flex-direction: column;
 }
 
-.logo-wrapper {
-    background-color: transparent; /* Fondo invisible */
-    padding: 0; /* Quitamos el relleno extra */
-    border-radius: 0; 
-    display: inline-block;
+.logo-img {
+    height: 50px; /* <--- AJUSTA ESTE NÚMERO. Prueba con 45px, 50px o 60px */
+    width: auto;  /* Esto mantiene la proporción para que no se deforme */
+    display: block;
 }
 }
 
@@ -380,5 +379,6 @@ img {
         gap: 2rem;
     }
 }
+
 
 
