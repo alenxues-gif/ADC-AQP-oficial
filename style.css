@@ -62,10 +62,10 @@ img {
 
 .branding-container {
     display: flex;
-    flex-direction: column; /* Pone uno sobre otro */
+    flex-direction: column;
     justify-content: center;
-    align-items: center; /* <--- ESTO CENTRA EL SLOGAN CON LA IMAGEN */
-    text-align: center;  /* Asegura que el texto también esté centrado */
+    align-items: flex-start; /* <--- Vuelve a alinear a la IZQUIERDA */
+    text-align: left;
 }
 
 .logo-img {
@@ -375,6 +375,7 @@ img {
         gap: 2rem;
     }
 }
+
 
 
 
