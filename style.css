@@ -66,14 +66,7 @@ img {
 }
 
 .logo-img {
-    height: 40px; /* <--- AJUSTA ESTE NÚMERO. Prueba con 45px, 50px o 60px */
-    width: auto;  /* Esto mantiene la proporción para que no se deforme */
-    display: block;
-}
-}
-
-.logo-img {
-    height: 50px; 
+    height: 80px; 
     width: auto;
 }
 
