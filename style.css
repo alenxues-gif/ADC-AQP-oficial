@@ -66,10 +66,11 @@ img {
 }
 
 .logo-wrapper {
-    background-color: #fff;
-    padding: 5px 10px;
+    /* background-color: #fff;  <-- BORRA O COMENTA ESTA LÍNEA */
+    padding: 5px 10px; /* Puedes reducir esto si quieres */
     border-radius: 4px;
     display: inline-block;
+}
 }
 
 .logo-img {
@@ -379,3 +380,4 @@ img {
         gap: 2rem;
     }
 }
+
